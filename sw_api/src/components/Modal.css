@@ -1,0 +1,41 @@
+/* Classes */
+.modal-container {
+    position: fixed;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	max-height: 100%;
+    max-width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+}
+
+.modal-screen {
+    height: 600px;
+    max-width: 50%;
+    max-height: 800px;
+    margin-top: 70px;
+    margin-left: 25%;
+    background:white;
+    border-radius: 10px;
+}
+
+/* Ids */
+#close-icon {
+    width: 20px;
+    margin-top: 13px;
+    float: right;
+    cursor: pointer;
+}
+
+#modal-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: black;
+    margin-top: 20px;
+}
+
+#modal-loading {
+    font-size: 1.5rem;
+    margin-top: 100px;
+}

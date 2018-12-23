@@ -1,0 +1,84 @@
+/* Classes */
+.poster {
+    width: 100%;
+    border-color: white;
+    background: white;
+    cursor: pointer;
+}
+
+.poster-name {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    padding: 0px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.poster-image {
+    height: 150px;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* IDs */
+
+/**************************** Lower 1200px ****************************/
+@media (max-width: 1200px) {
+    /* Classes */
+    .poster-name {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    .poster-image {
+        height: 130px;
+    }
+}
+
+/**************************** Lower 991px ****************************/
+@media (max-width: 991px) {
+    /* Classes */
+    .poster-name {
+        font-size: 1.2rem;
+        font-weight: 550;
+    }
+
+    .poster-image {
+        height: 95px;
+    }
+}
+
+/**************************** Lower 767px ****************************/
+@media (max-width: 767px) {
+    /* Classes */
+    .poster-name {
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+
+    .poster-image {
+        height: 150px;
+    }
+}
+
+/**************************** Lower 575px ****************************/
+@media (max-width: 575px) {
+    /* Classes */
+    .poster-name {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .poster-image {
+        height: 240px;
+    }
+}
+
+/**************************** Lower 575px ****************************/
+@media (max-width: 575px) {
+    /* Classes */
+    .poster {
+        width: 95%;
+    }
+}

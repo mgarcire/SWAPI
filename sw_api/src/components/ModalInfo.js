@@ -13,6 +13,7 @@ class ModalInfo extends Component {
         }
     }
 
+    // Method that creates the element to be shown.
     createElement() {
         const el = this.props.element;
         
@@ -42,6 +43,7 @@ class ModalInfo extends Component {
                 }
                 
                 element.data3 = <span>Release Data: <b>{el.release_date}</b></span>;
+                element.data4 = <span>Opening Crawl:<br/><b>{el.opening_crawl}</b><br/></span>;
                 break;
             case "Characters":
                 element.data1 = <span>Birth Year: <b>{el.birth_year}</b></span>;
@@ -66,16 +68,19 @@ class ModalInfo extends Component {
                 element.data3 = <span>Average Height: <b>{el.average_height/100} m</b></span>;
                 element.data4 = <span>Average Lifespan: <b>{el.average_lifespan} years</b></span>;
                 break;
+            default:
+                break;
         }
 
         return element;
     }
 
+    // Method that shows/hides the element.
     showHideData() {
         if (this.state.showing) {
             this.setState({showing : false, display : 'none', image : 'images/plus.png'});
         } else {
-            this.setState({showing : true, display : 'block', image : 'images/minus.png'}); 
+            this.setState({showing : true, display : 'block', image : 'images/minus.png'});
         }
     }
 

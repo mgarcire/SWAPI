@@ -8,9 +8,9 @@
 }
 
 .modal-info-header {
-    border: 2px solid #522274;
+    border: 2px solid #2C7ACD;
     border-radius: 10px;
-    background: #522274;
+    background: #2C7ACD;
 }
 
 .modal-info-title {
@@ -29,7 +29,7 @@
     margin-top: 11px;
     background: white;
     border-radius: 10px;
-    border: 2px solid #522274;
+    border: 2px solid #2C7ACD;
 }
 
 .modal-info-paragraph {

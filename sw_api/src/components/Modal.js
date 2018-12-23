@@ -12,6 +12,15 @@ class Modal extends Component {
         };
     }
 
+    // Method that compares the episode ids of the results in case the item is a movie.
+    compare(a,b) {
+        if (a.episode_id < b.episode_id)
+          return -1;
+        if (a.episode_id > b.episode_id)
+          return 1;
+        return 0;
+    }  
+
     componentDidMount() {
         this.setState({item : this.props.item}, () => {
             if (this.state.item.results !== null && this.state.item.results !== undefined && this.state.item.results.length <= 0) {
@@ -20,6 +29,11 @@ class Modal extends Component {
                 }).then(response => {
                     let item = {...this.state.item};
                     item.results = response.results;
+
+                    if (item.name === "Movies" && item.results !== null && item.results !== undefined){
+                        item.results.sort(this.compare);
+                    }
+
                     this.setState({item});
                 });
             }

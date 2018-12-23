@@ -62,7 +62,7 @@
     }
 }
 
-/**************************** Lower 750px ****************************/
+/**************************** Lower 500px ****************************/
 @media (max-width: 500px) {
     /* Classes */
     .modal-info-title {
@@ -75,5 +75,21 @@
 
     .modal-info-paragraph {
         font-size: 0.7rem;
+    }
+}
+
+/**************************** Lower 400px ****************************/
+@media (max-width: 400px) {
+    /* Classes */
+    .modal-info-title {
+        font-size: 0.7rem;
+    }
+
+    .open-close-element-img {
+        width: 17px;
+    }
+
+    .modal-info-paragraph {
+        font-size: 0.6rem;
     }
 }

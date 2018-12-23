@@ -82,3 +82,11 @@
         width: 95%;
     }
 }
+
+/**************************** Lower 400px ****************************/
+@media (max-width: 400px) {
+    /* Classes */
+    .poster-image {
+        height: 160px;
+    }
+}

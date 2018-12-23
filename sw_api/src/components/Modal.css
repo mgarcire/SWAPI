@@ -68,6 +68,7 @@
 
     .modal-title {
         font-size: 2rem;
+        margin-bottom: 15px;
     }
 
     /* Ids */
@@ -76,15 +77,29 @@
     }
 }
 
-/**************************** Lower 750px ****************************/
+/**************************** Lower 500px ****************************/
 @media (max-width: 500px) {
     /* Classes */
     .modal-title {
         font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .close-icon {
+        width: 15px;
     }
 
     /* Ids */
     #modal-loading {
         font-size: 1.2rem;
+    }
+}
+
+/**************************** Lower 500px ****************************/
+@media (max-width: 400px) {
+    /* Classes */
+    .modal-screen {
+        height: 520px;
+        margin-top: 40px;
     }
 }

@@ -38,13 +38,13 @@ class Modal extends Component {
             return (
                 <div className='modal modal-container' style={{display:display}}>
                     <div className='row'>
-                        <div className='col-12 modal-screen'>
-                            <img src='images/cancel_icon.png' id='close-icon' onClick={() => this.closeModal()} alt='Close button'/>
-                            <p id='modal-title' className='tc'>{this.state.item.name}</p>
+                        <div className='col-12 modal-body modal-screen'>
+                            <img src='images/cancel_icon.png' className='close-icon' onClick={() => this.closeModal()} alt='Close button'/>
+                            <p className='modal-title tc'>{this.state.item.name}</p>
                             <div>
                                 {this.state.item.results.map((element, i) => {
                                     return (
-                                        <ModalInfo key={i} element={element}/>
+                                        <ModalInfo key={i} title={this.state.item.name} element={element}/>
                                     );
                                 })}
                             </div>
@@ -56,10 +56,10 @@ class Modal extends Component {
             return (
                 <div className='modal modal-container' style={{display:display}}>
                     <div className='row'>
-                        <div className='col-12 modal-screen'>
+                        <div className='col-12 modal-body modal-screen'>
+                            <img src='images/cancel_icon.png' className='close-icon' onClick={() => this.closeModal()} alt='Close button'/>
+                            <p className='modal-title tc'>{this.state.item.name}</p>
                             <div>
-                                <img src='images/cancel_icon.png' id='close-icon' onClick={() => this.closeModal()} alt='Close button'/>
-                                <p id='modal-title' className='tc'>{this.state.item.name}</p>
                                 <p className='tc' id='modal-loading'>Loading...</p>
                             </div>
                         </div>

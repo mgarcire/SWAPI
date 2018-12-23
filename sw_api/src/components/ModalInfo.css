@@ -1,0 +1,48 @@
+/* Classes */
+.modal-info-background {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.modal-info-header {
+    border: 2px solid #522274;
+    border-radius: 10px;
+    background: #522274;
+}
+
+.modal-info-title {
+    font-size: 1rem;
+    vertical-align: middle;
+    margin-bottom: 0px;
+    color: white;
+    font-weight: bold;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.modal-info-data {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 11px;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid #522274;
+}
+
+.modal-info-paragraph {
+    font-size: 0.9rem;
+    vertical-align: middle;
+    margin-bottom: 0px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.open-close-element-img {
+    width: 23px;
+    float: right;
+}
+
+/* Ids */

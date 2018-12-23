@@ -11,30 +11,36 @@
 }
 
 .modal-screen {
-    height: 600px;
+    height: 630px;
     max-width: 50%;
     max-height: 800px;
     margin-top: 70px;
     margin-left: 25%;
     background:white;
     border-radius: 10px;
+    overflow: hidden;
 }
 
-/* Ids */
-#close-icon {
+.modal-screen:hover {
+    overflow-y: auto;
+}
+
+.close-icon {
     width: 20px;
-    margin-top: 13px;
+    margin-top: 0px;
     float: right;
     cursor: pointer;
 }
 
-#modal-title {
-    font-size: 2.5rem;
+.modal-title {
+    font-size: 2.2rem;
     font-weight: 500;
     color: black;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+/* Ids */
 #modal-loading {
     font-size: 1.5rem;
     margin-top: 100px;

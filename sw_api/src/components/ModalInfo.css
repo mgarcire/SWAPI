@@ -25,7 +25,6 @@
 
 .modal-info-data {
     padding: 0px;
-    margin: 0px;
     margin-top: 11px;
     background: white;
     border-radius: 10px;
@@ -46,3 +45,35 @@
 }
 
 /* Ids */
+
+/**************************** Lower 750px ****************************/
+@media (max-width: 750px) {
+    /* Classes */
+    .modal-info-title {
+        font-size: 0.9rem;
+    }
+
+    .open-close-element-img {
+        width: 21px;
+    }
+
+    .modal-info-paragraph {
+        font-size: 0.8rem;
+    }
+}
+
+/**************************** Lower 750px ****************************/
+@media (max-width: 500px) {
+    /* Classes */
+    .modal-info-title {
+        font-size: 0.8rem;
+    }
+
+    .open-close-element-img {
+        width: 19px;
+    }
+
+    .modal-info-paragraph {
+        font-size: 0.7rem;
+    }
+}
